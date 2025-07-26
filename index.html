@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Site exclusivo do meu amor</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+Oi, amor!<br />
+<br>
+Acho que hoje você completa a maior idade né, e quanta coisa aconteceu até aqui.<br />
+Desde aquela sexta feira caótica no cinema alguma coisa mudou, uma faísca começou.<br />
+Seu rosto, sua voz, suas palavras.<br />
+Tudo em você ficou gravado no meu coração.<br />
+Com o passar do tempo<br />
+nosso laço ficou cada vez mais forte,<br />
+jornada da paixão ao amor.<br />
+Nós percorremos um longo caminho juntos,<br />
+houveram brigas e tenho certeza que haverá mais,<br />
+mas nosso laço sempre ficará mais forte.<br />
+<br />
+Quero desejar um feliz aniversário, que você realize todos os seus sonhos e que em todos eles você seja feliz. Que você consiga enxergar a pessoa maravilhosa que você é, e, que ainda tem muitas coisas lindas pra viver pela frente.<br />
+<br />
+Você é o amor da minha vida, você me dá uma vontade linda de viver, é como se, ao me apaixonar por você me apaixonasse pela vida também! EU TE AMO!<br />
+<br>
+Tudo o que quero dizer é:<br />
+Você é especial para mim e para todos, FELIZ ANIVERSÁRIO MEU AMOR!<br />
+<br>
+<br>
+Se quiser lembrar de nós, aperta em um dos corações e receba um beijinho<br />
+<br>
+<span id="heartspan">
+<a href="coracao1.html" target="_blank"><i class="fas fa-heart icon" style="color: #e75480; font-size: 48px;"></i></a>
+<a href="coracao2.html" target="_blank"><i class="fas fa-heart icon" style="color: #000000; font-size: 48px;"></i></a>
+<a href="coracao3.html" target="_blank"><i class="fas fa-heart icon" style="color: #800080; font-size: 48px;"></i></a>
+<a href="coracao4.html" target="_blank"><i class="fas fa-heart icon" style="color: red; font-size: 48px;"></i></a>
+</span>
+</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					INVISIBLE STRING 
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					EU TE AMO MUITO<br/>
+					<div class="signature">- ARTHUR</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2024, 7, 13); // Mês 7 = Agosto (0-indexado)
+together.setHours(20);
+together.setMinutes(2);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Seu navegador não suporta HTML5!<br/>Recomendamos usar Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Quarto Coração</title>
+    <style>
+        body { text-align: center; background: #ffe; font-family: sans-serif; }
+        img { max-width: 90vw; max-height: 70vh; margin-top: 30px; border-radius: 20px; box-shadow: 0 0 20px red; }
+        h1 { color: red; }
+        a { display: inline-block; margin-top: 30px; color: red; text-decoration: none; font-size: 18px; }
+    </style>
+    <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <h1>Te amo em cada detalhe!</h1>
+    <audio controls style="margin: 20px auto; display: block;">
+        <source src="dayligth.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <img src="img4.jpg" alt="Foto especial">
+    <br>
+    <a href="index.html">Voltar para a página principal</a>
+    <script>
+        // Sobe 28 corações vermelhos ao abrir, bem distribuídos
+        for(let i=0;i<10;i++) animarCoracoesSubindo(1, 'red');
+        for(let i=0;i<9;i++) setTimeout(()=>criarCoracaoAnimado('red', 5+Math.random()*15), Math.random()*1000);
+        for(let i=0;i<9;i++) setTimeout(()=>criarCoracaoAnimado('red', 20+Math.random()*20), Math.random()*1000);
+    </script>
+</body>
+</html> 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Terceiro Coração</title>
+    <style>
+        body { text-align: center; background: #ffe; font-family: sans-serif; }
+        img, video { max-width: 90vw; max-height: 70vh; margin-top: 30px; border-radius: 20px; box-shadow: 0 0 20px #ccc; }
+        h1 { color: #ccc; }
+        a { display: inline-block; margin-top: 30px; color: #ccc; text-decoration: none; font-size: 18px; }
+    </style>
+    <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <h1>Quero ter a honra viver tudo ao seu lado.</h1>
+    <audio controls style="margin: 20px auto; display: block;">
+        <source src="lisboa.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <video controls loop>
+        <source src="vid3.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <br>
+    <a href="index.html">Voltar para a página principal</a>
+    <script>
+        // Sobe 14 corações roxos claros ao abrir
+        for(let i=0;i<5;i++) animarCoracoesSubindo(1, '#800080');
+        for(let i=0;i<5;i++) setTimeout(()=>criarCoracaoAnimado('#800080', 5+Math.random()*15), Math.random()*1000);
+        for(let i=0;i<4;i++) setTimeout(()=>criarCoracaoAnimado('#800080', 20+Math.random()*20), Math.random()*1000);
+    </script>
+</body>
+</html> 

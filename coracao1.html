@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Primeiro Coração</title>
+    <style>
+        body { text-align: center; background: #ffe; font-family: sans-serif; }
+        img { max-width: 90vw; max-height: 70vh; margin-top: 30px; border-radius: 20px; box-shadow: 0 0 20px #e75480; }
+        h1 { color: #e75480; }
+        a { display: inline-block; margin-top: 30px; color: #e75480; text-decoration: none; font-size: 18px; }
+    </style>
+    <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <h1>Eu amo sua companhia!</h1>
+    <audio controls style="margin: 20px auto; display: block;">
+        <source src="bennie-and-the-jets.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <img src="img1.jpg" alt="Foto especial">
+    <br>
+    <a href="index.html">Voltar para a página principal</a>
+    <script>
+        // Sobe 36 corações rosa ao abrir, bem distribuídos
+        for(let i=0;i<12;i++) animarCoracoesSubindo(1, '#e75480'); // padrão
+        for(let i=0;i<12;i++) setTimeout(()=>criarCoracaoAnimado('#e75480', 5+Math.random()*15), Math.random()*1000); // esquerda
+        for(let i=0;i<12;i++) setTimeout(()=>criarCoracaoAnimado('#e75480', 20+Math.random()*20), Math.random()*1000); // centro-esquerda
+        // Função modificada para aceitar posição opcional
+    </script>
+</body>
+</html> 
